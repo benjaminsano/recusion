@@ -1,0 +1,41 @@
+public class SquareRoot
+{
+  private double square;
+  private double error;
+  
+  public SquareRoot(double one, double two)
+  {
+    square = one;
+    error = two;
+  }
+  
+  public void setSquare(double num)
+  {
+    square = num;
+  }
+  
+  public double getSquare()
+  {
+    return square;
+  }
+  
+  public void setError(double num)
+  {
+    error = num;
+  }
+  
+  public double getError()
+  {
+    return error;
+  }
+  
+  public static void squareRoot(double square)
+  {
+    if(square>1)
+    {
+       double squared = 0.5*((square-1)+(square/(square-1)));
+      System.out.println(" " + squared);
+      squareRoot(square-1);
+    }
+  }
+}
