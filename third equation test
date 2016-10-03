@@ -1,0 +1,25 @@
+public class SquareRoot
+{
+  private double square;
+  private double error;
+  
+  public SquareRoot(double one, double two)
+  {
+    square = one;
+    error = two;
+  }
+  
+  public static void squareRoot(double square, double error)
+  {
+    if(square>1)
+    {
+       double squared = 0.5*((square-1)+(square/(square-1)));
+      System.out.println(" " + squared);
+      squareRoot(square-1, error);
+      if(Math.sqrt(square) - squared <= error)
+      {
+        System.out.print("The answer is " + squared);
+      }
+    }
+  }
+}
