@@ -1,0 +1,31 @@
+public class SquareRoot
+{
+  private double square;
+  private double error;
+  
+  public SquareRoot(double one, double two)
+  {
+    square = one;
+    error = two;
+  }
+  
+  public void setSquare(double num)
+  {
+    square = num;
+  }
+  
+  public double getSquare()
+  {
+    return square;
+  }
+  
+  public void setError(double num)
+  {
+    error = num;
+  }
+  
+  public double getError()
+  {
+    return error;
+  }
+}
